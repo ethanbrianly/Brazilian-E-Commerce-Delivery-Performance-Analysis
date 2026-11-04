@@ -1,5 +1,5 @@
 # Olist Late Delivery Analysis
-![Dashboard](dashboard.png)
+
 
 ## Project Overview
 This project analyzes about 96,000 delivered orders from Olist, a Brazilian e-commerce marketplace, to understand where late deliveries come from, what they cost in customer reviews, and which fix would avoid the most late orders. The analysis follows an order from purchase to delivery, comparing the actual delivery date with the date promised to the customer, and then looks at how lateness varies by destination state, seller-to-customer route, and delivery time bucket. Review scores and a simple savings scenario are used to measure the impact of late delivery.
@@ -13,6 +13,11 @@ SQL (DuckDB), Excel, Tableau Public
 [Olist Brazilian E-Commerce Public Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) (Kaggle), covering orders from 2016 to 2018. It contains nine related tables: orders, order items, payments, reviews, customers, sellers, products, geolocation, and product category translations.
 
 Key fields include purchase, delivery, and estimated delivery dates, customer and seller state, item price and freight value, product category, and review scores and comments. After filtering to delivered orders there are 96,470 orders. The raw CSVs are not included in this repo and can be downloaded from Kaggle.
+
+### State Codes
+All codes are Brazilian states. A lane is seller state to customer state, so "SP to RJ" means a seller in São Paulo shipping to a customer in Rio de Janeiro.
+
+AC Acre, AL Alagoas, AM Amazonas, AP Amapá, BA Bahia, CE Ceará, DF Distrito Federal, ES Espírito Santo, GO Goiás, MA Maranhão, MG Minas Gerais, MS Mato Grosso do Sul, MT Mato Grosso, PA Pará, PB Paraíba, PE Pernambuco, PI Piauí, PR Paraná, RJ Rio de Janeiro, RN Rio Grande do Norte, RO Rondônia, RR Roraima, RS Rio Grande do Sul, SC Santa Catarina, SE Sergipe, SP São Paulo, TO Tocantins
 
 ## Project Goals
 - Measure how often orders are delivered late, and where
