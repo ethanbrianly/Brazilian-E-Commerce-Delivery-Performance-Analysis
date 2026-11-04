@@ -1,5 +1,5 @@
 # Olist Late Delivery Analysis
-
+![Dashboard](dashboard.png)
 
 ## Project Overview
 This project analyzes about 96,000 delivered orders from Olist, a Brazilian e-commerce marketplace, to understand where late deliveries come from, what they cost in customer reviews, and which fix would avoid the most late orders. The analysis follows an order from purchase to delivery, comparing the actual delivery date with the date promised to the customer, and then looks at how lateness varies by destination state, seller-to-customer route, and delivery time bucket. Review scores and a simple savings scenario are used to measure the impact of late delivery.
